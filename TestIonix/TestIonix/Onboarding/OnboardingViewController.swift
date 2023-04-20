@@ -11,7 +11,8 @@ class OnboardingViewController: UIPageViewController, UIPageViewControllerDataSo
 
     private lazy var orderedViewControllers: [UIViewController] = {
         return [
-            CameraViewController()
+            CameraViewController(),
+            PushNotificationsViewController()
         ]
     }()
     
