@@ -1,0 +1,31 @@
+
+TestIonix/Pods/Target Support Files/Pods-TestIonix/Pods-TestIonix.release.xcconfig
+TestIonix/Pods/Target Support Files/Pods-TestIonix/Pods-TestIonix.modulemap
+TestIonix/Pods/Target Support Files/Pods-TestIonix/Pods-TestIonix.debug.xcconfig
+TestIonix/Pods/Target Support Files/Pods-TestIonix/Pods-TestIonix-umbrella.h
+TestIonix/Pods/Target Support Files/Pods-TestIonix/Pods-TestIonix-Info.plist
+TestIonix/Pods/Target Support Files/Pods-TestIonix/Pods-TestIonix-frameworks.sh
+TestIonix/Pods/Target Support Files/Pods-TestIonix/Pods-TestIonix-frameworks-Release-output-files.xcfilelist
+TestIonix/Pods/Target Support Files/Pods-TestIonix/Pods-TestIonix-frameworks-Release-input-files.xcfilelist
+TestIonix/Pods/Target Support Files/Pods-TestIonix/Pods-TestIonix-frameworks-Debug-output-files.xcfilelist
+TestIonix/Pods/Target Support Files/Pods-TestIonix/Pods-TestIonix-frameworks-Debug-input-files.xcfilelist
+TestIonix/Pods/Target Support Files/Pods-TestIonix/Pods-TestIonix-dummy.m
+TestIonix/Pods/Target Support Files/Pods-TestIonix/Pods-TestIonix-acknowledgements.plist
+TestIonix/Pods/Target Support Files/Pods-TestIonix/Pods-TestIonix-acknowledgements.markdown
+TestIonix/Pods/Target Support Files/KeychainSwift/KeychainSwift.release.xcconfig
+TestIonix/Pods/Target Support Files/KeychainSwift/KeychainSwift.modulemap
+TestIonix/Pods/Target Support Files/KeychainSwift/KeychainSwift.debug.xcconfig
+TestIonix/Pods/Target Support Files/KeychainSwift/KeychainSwift-umbrella.h
+TestIonix/Pods/Target Support Files/KeychainSwift/KeychainSwift-prefix.pch
+TestIonix/Pods/Target Support Files/KeychainSwift/KeychainSwift-Info.plist
+TestIonix/Pods/Target Support Files/KeychainSwift/KeychainSwift-dummy.m
+TestIonix/Pods/Pods.xcodeproj/xcuserdata/edwardpizzurro.xcuserdatad/xcschemes/xcschememanagement.plist
+TestIonix/Pods/Pods.xcodeproj/xcuserdata/edwardpizzurro.xcuserdatad/xcschemes/Pods-TestIonix.xcscheme
+TestIonix/Pods/Pods.xcodeproj/xcuserdata/edwardpizzurro.xcuserdatad/xcschemes/KeychainSwift.xcscheme
+TestIonix/Pods/Pods.xcodeproj/project.pbxproj
+TestIonix/Pods/Manifest.lock
+TestIonix/Pods/KeychainSwift/Sources/TegKeychainConstants.swift
+TestIonix/Pods/KeychainSwift/Sources/KeychainSwiftAccessOptions.swift
+TestIonix/Pods/KeychainSwift/Sources/KeychainSwift.swift
+TestIonix/Pods/KeychainSwift/README.md
+TestIonix/Pods/KeychainSwift/LICENSE

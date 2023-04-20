@@ -15,8 +15,20 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         
         guard let windowScene = (scene as? UIWindowScene) else { return }
+        
         window = UIWindow(windowScene: windowScene)
-        window?.rootViewController = OnboardingViewController()
+        
+        let isFirstLaunch = UserDefaults.standard.bool(forKey: "isFirstLaunch")
+//        UserDefaults.standard.set(false, forKey: "isFirstLaunch")
+        if !isFirstLaunch {
+            UserDefaults.standard.set(true, forKey: "isFirstLaunch")
+            let onboardingViewController = OnboardingViewController(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
+            window?.rootViewController = onboardingViewController
+        } else {
+            let homeViewController = HomeViewController()
+            window?.rootViewController = homeViewController
+        }
+        
         window?.makeKeyAndVisible()
     }
 

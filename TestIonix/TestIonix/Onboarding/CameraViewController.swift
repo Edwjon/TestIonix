@@ -7,13 +7,20 @@
 
 import UIKit
 import AVFoundation
+import KeychainSwift
 
 class CameraViewController: UIViewController {
+    
+    private let keychain = KeychainSwift()
+    private let cameraAccessKey = "com.testIonix.cameraAccess"
+    
     private let imageView = UIImageView()
     private let titleLabel = UILabel()
     private let descriptionLabel = UILabel()
     private let allowButton = UIButton(type: .system)
     private let cancelButton = UIButton(type: .system)
+    
+    var onCancelTapped: (() -> Void)?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -102,8 +109,10 @@ class CameraViewController: UIViewController {
         AVCaptureDevice.requestAccess(for: .video) { granted in
             DispatchQueue.main.async {
                 if granted {
+                    self.keychain.set(true, forKey: self.cameraAccessKey)
                     // The user has granted access to the camera
                 } else {
+                    self.keychain.set(false, forKey: self.cameraAccessKey)
                     // The user has denied access to the camera
                 }
             }
@@ -111,6 +120,11 @@ class CameraViewController: UIViewController {
     }
 
     @objc private func cancelButtonTapped() {
-        // Handle the cancel button action
+        onCancelTapped?()
+    }
+    
+    //Check the user's camera access preference
+    func hasCameraAccess() -> Bool {
+        return keychain.getBool(cameraAccessKey) ?? false
     }
 }

@@ -10,12 +10,31 @@ import UIKit
 class OnboardingViewController: UIPageViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
 
     private lazy var orderedViewControllers: [UIViewController] = {
-        return [
-            CameraViewController(),
-            PushNotificationsViewController(),
-            LocationViewController()
-        ]
+        let cameraVC = CameraViewController()
+        let pushNotificationVC = PushNotificationsViewController()
+        let locationVC = LocationViewController()
+        
+        cameraVC.onCancelTapped = { [weak self] in
+            self?.dismissOnboardingAndShowHome()
+        }
+        pushNotificationVC.onCancelTapped = { [weak self] in
+            self?.dismissOnboardingAndShowHome()
+        }
+        locationVC.onCancelTapped = { [weak self] in
+            self?.dismissOnboardingAndShowHome()
+        }
+        
+        return [cameraVC, pushNotificationVC, locationVC]
     }()
+    
+    private func dismissOnboardingAndShowHome() {
+        let homeViewController = HomeViewController()
+        
+        if let window = UIApplication.shared.windows.first {
+            window.rootViewController = homeViewController
+            UIView.transition(with: window, duration: 0.3, options: .transitionCrossDissolve, animations: nil, completion: nil)
+        }
+    }
     
     private var pageControl = UIPageControl()
 
@@ -25,6 +44,12 @@ class OnboardingViewController: UIPageViewController, UIPageViewControllerDataSo
         dataSource = self
         delegate = self
         
+        // Disable the default UIPageControl
+        for view in view.subviews {
+            if view is UIPageControl {
+                view.isHidden = true
+            }
+        }
         if let firstViewController = orderedViewControllers.first {
             setViewControllers([firstViewController], direction: .forward, animated: true, completion: nil)
         }

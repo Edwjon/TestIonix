@@ -8,13 +8,20 @@
 import Foundation
 import UIKit
 import CoreLocation
+import KeychainSwift
 
 class LocationViewController: UIViewController, CLLocationManagerDelegate {
+    
+    private let keychain = KeychainSwift()
+    private let locationAccessKey = "com.testIonix.locationAccess"
+    
     private let imageView = UIImageView()
     private let titleLabel = UILabel()
     private let descriptionLabel = UILabel()
     private let allowButton = UIButton(type: .system)
     private let cancelButton = UIButton(type: .system)
+    
+    var onCancelTapped: (() -> Void)?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -111,10 +118,10 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate {
         DispatchQueue.main.async {
             switch status {
             case .authorizedWhenInUse, .authorizedAlways:
-                print("")
+                self.keychain.set(true, forKey: self.locationAccessKey)
                 // The user has granted access to the location
             case .denied, .restricted:
-                print("")
+                self.keychain.set(false, forKey: self.locationAccessKey)
                 // The user has denied access to the location
             default:
                 // The location authorization status is not determined or not applicable
@@ -124,6 +131,11 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate {
     }
 
     @objc private func cancelButtonTapped() {
-        // Handle the cancel button action
+        onCancelTapped?()
+    }
+    
+    //Check the user's location access preference
+    func hasLocationAccess() -> Bool {
+        return keychain.getBool(locationAccessKey) ?? false
     }
 }

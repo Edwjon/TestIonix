@@ -8,13 +8,20 @@
 import Foundation
 import UIKit
 import UserNotifications
+import KeychainSwift
 
 class PushNotificationsViewController: UIViewController {
+    
+    private let keychain = KeychainSwift()
+    private let pushNotificationAccessKey = "com.testIonix.pushNotificationAccess"
+    
     private let imageView = UIImageView()
     private let titleLabel = UILabel()
     private let descriptionLabel = UILabel()
     private let allowButton = UIButton(type: .system)
     private let cancelButton = UIButton(type: .system)
+    
+    var onCancelTapped: (() -> Void)?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -105,8 +112,10 @@ class PushNotificationsViewController: UIViewController {
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
             DispatchQueue.main.async {
                 if granted {
+                    self.keychain.set(true, forKey: self.pushNotificationAccessKey)
                     // The user has granted access to push notifications
                 } else {
+                    self.keychain.set(false, forKey: self.pushNotificationAccessKey)
                     // The user has denied access to push notifications
                 }
             }
@@ -114,6 +123,11 @@ class PushNotificationsViewController: UIViewController {
     }
 
     @objc private func cancelButtonTapped() {
-        // Handle the cancel button action
+        onCancelTapped?()
+    }
+    
+    //Check the user's notification access preference
+    func hasPushNotificationAccess() -> Bool {
+        return keychain.getBool(pushNotificationAccessKey) ?? false
     }
 }
