@@ -15,10 +15,10 @@ class OnboardingViewController: UIPageViewController, UIPageViewControllerDataSo
         let locationVC = LocationViewController()
         
         cameraVC.onCancelTapped = { [weak self] in
-            self?.dismissOnboardingAndShowHome()
+            self?.goToNextViewController()
         }
         pushNotificationVC.onCancelTapped = { [weak self] in
-            self?.dismissOnboardingAndShowHome()
+            self?.goToNextViewController()
         }
         locationVC.onCancelTapped = { [weak self] in
             self?.dismissOnboardingAndShowHome()
@@ -55,6 +55,13 @@ class OnboardingViewController: UIPageViewController, UIPageViewControllerDataSo
         }
         
         configurePageControl()
+    }
+    
+    private func goToNextViewController() {
+        if let currentViewController = viewControllers?.first,
+           let nextViewController = pageViewController(self, viewControllerAfter: currentViewController) {
+            setViewControllers([nextViewController], direction: .forward, animated: true, completion: nil)
+        }
     }
     
     // MARK: - UIPageViewControllerDataSource
