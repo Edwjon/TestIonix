@@ -7,38 +7,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        view.backgroundColor = .white
-    }
-
-
-}
-
-class ViewController2: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        view.backgroundColor = .red
-    }
-
-
-}
-
-
-import UIKit
-
 class OnboardingViewController: UIPageViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
 
     private lazy var orderedViewControllers: [UIViewController] = {
         return [
-            ViewController(),
-            ViewController2(),
-            ViewController()
+            CameraViewController()
         ]
     }()
     

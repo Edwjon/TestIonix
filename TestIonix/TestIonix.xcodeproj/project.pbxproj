@@ -12,6 +12,7 @@
 		472E1B0129F1DA6500D41C87 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472E1B0029F1DA6500D41C87 /* OnboardingViewController.swift */; };
 		472E1B0629F1DA6600D41C87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 472E1B0529F1DA6600D41C87 /* Assets.xcassets */; };
 		472E1B0929F1DA6600D41C87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 472E1B0729F1DA6600D41C87 /* LaunchScreen.storyboard */; };
+		472E1B1229F1DE4600D41C87 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472E1B1129F1DE4600D41C87 /* CameraViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		472E1B0529F1DA6600D41C87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		472E1B0829F1DA6600D41C87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		472E1B0A29F1DA6600D41C87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		472E1B1129F1DE4600D41C87 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +58,21 @@
 			children = (
 				472E1AFC29F1DA6500D41C87 /* AppDelegate.swift */,
 				472E1AFE29F1DA6500D41C87 /* SceneDelegate.swift */,
-				472E1B0029F1DA6500D41C87 /* OnboardingViewController.swift */,
+				472E1B1029F1DE0700D41C87 /* Onboarding */,
 				472E1B0529F1DA6600D41C87 /* Assets.xcassets */,
 				472E1B0729F1DA6600D41C87 /* LaunchScreen.storyboard */,
 				472E1B0A29F1DA6600D41C87 /* Info.plist */,
 			);
 			path = TestIonix;
+			sourceTree = "<group>";
+		};
+		472E1B1029F1DE0700D41C87 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				472E1B0029F1DA6500D41C87 /* OnboardingViewController.swift */,
+				472E1B1129F1DE4600D41C87 /* CameraViewController.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				472E1B0129F1DA6500D41C87 /* OnboardingViewController.swift in Sources */,
+				472E1B1229F1DE4600D41C87 /* CameraViewController.swift in Sources */,
 				472E1AFD29F1DA6500D41C87 /* AppDelegate.swift in Sources */,
 				472E1AFF29F1DA6500D41C87 /* SceneDelegate.swift in Sources */,
 			);
