@@ -8,5 +8,6 @@ target 'TestIonix' do
   # Pods for TestIonix
 
   pod 'KeychainSwift', '~> 20.0'
+  pod 'Alamofire'
 
 end
