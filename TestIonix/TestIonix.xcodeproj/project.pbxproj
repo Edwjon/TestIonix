@@ -18,6 +18,7 @@
 		472E1B1629F1E8D900D41C87 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472E1B1529F1E8D900D41C87 /* LocationViewController.swift */; };
 		47A77E5329F20C650044F541 /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A77E5229F20C650044F541 /* ApiResponse.swift */; };
 		47A77E5529F20C6F0044F541 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A77E5429F20C6F0044F541 /* Post.swift */; };
+		47A77E5729F20CA60044F541 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A77E5629F20CA60044F541 /* Api.swift */; };
 		47F732CF29F1F5F2000FEB32 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F732CE29F1F5F2000FEB32 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +35,7 @@
 		472E1B1529F1E8D900D41C87 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		47A77E5229F20C650044F541 /* ApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
 		47A77E5429F20C6F0044F541 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		47A77E5629F20CA60044F541 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		47F732CE29F1F5F2000FEB32 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		54C4397C00259660A4EB48F2 /* Pods-TestIonix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestIonix.debug.xcconfig"; path = "Target Support Files/Pods-TestIonix/Pods-TestIonix.debug.xcconfig"; sourceTree = "<group>"; };
 		5EAD2FAE4C027D99C6A7096E /* Pods-TestIonix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestIonix.release.xcconfig"; path = "Target Support Files/Pods-TestIonix/Pods-TestIonix.release.xcconfig"; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 		47A77E5129F20C320044F541 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				47A77E5629F20CA60044F541 /* Api.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 				47A77E5329F20C650044F541 /* ApiResponse.swift in Sources */,
 				47A77E5529F20C6F0044F541 /* Post.swift in Sources */,
 				47F732CF29F1F5F2000FEB32 /* HomeViewController.swift in Sources */,
+				47A77E5729F20CA60044F541 /* Api.swift in Sources */,
 				472E1AFF29F1DA6500D41C87 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
