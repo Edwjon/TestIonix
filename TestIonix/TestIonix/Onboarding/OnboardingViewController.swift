@@ -28,7 +28,7 @@ class OnboardingViewController: UIPageViewController, UIPageViewControllerDataSo
     }()
     
     private func dismissOnboardingAndShowHome() {
-        let homeViewController = HomeViewController()
+        let homeViewController = UINavigationController(rootViewController: HomeViewController()) 
         
         if let window = UIApplication.shared.windows.first {
             window.rootViewController = homeViewController
@@ -60,6 +60,7 @@ class OnboardingViewController: UIPageViewController, UIPageViewControllerDataSo
     private func goToNextViewController() {
         if let currentViewController = viewControllers?.first,
            let nextViewController = pageViewController(self, viewControllerAfter: currentViewController) {
+            pageControl.currentPage = pageControl.currentPage + 1
             setViewControllers([nextViewController], direction: .forward, animated: true, completion: nil)
         }
     }

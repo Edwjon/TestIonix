@@ -25,7 +25,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             let onboardingViewController = OnboardingViewController(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
             window?.rootViewController = onboardingViewController
         } else {
-            let homeViewController = HomeViewController()
+            let homeViewController = UINavigationController(rootViewController: HomeViewController()) 
             window?.rootViewController = homeViewController
         }
         

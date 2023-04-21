@@ -62,6 +62,9 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        title = "Memes"
+        setupLeftBarButtonItem()
+        
         let tap = UITapGestureRecognizer(target: self, action: #selector(handleViewTap))
         tap.cancelsTouchesInView = false
         view.addGestureRecognizer(tap)
@@ -104,6 +107,39 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
         
         // Load posts
         fetchFilteredPosts()
+    }
+    
+    private func setupLeftBarButtonItem() {
+        let originalImage = UIImage(named: "engine")
+        let targetSize = CGSize(width: 30, height: 30)
+        let resizedImage = resizeImage(image: originalImage!, targetSize: targetSize)
+        
+        let leftBarButtonItem = UIBarButtonItem(image: resizedImage, style: .plain, target: self, action: #selector(engineButtonTapped))
+        navigationItem.leftBarButtonItem = leftBarButtonItem
+    }
+    
+    @objc private func engineButtonTapped() {
+        let onboardingViewController = OnboardingViewController()
+        let navigationController = UINavigationController(rootViewController: onboardingViewController)
+        navigationController.modalPresentationStyle = .fullScreen
+        present(navigationController, animated: true, completion: nil)
+    }
+    
+    func resizeImage(image: UIImage, targetSize: CGSize) -> UIImage {
+        let size = image.size
+
+        let widthRatio  = targetSize.width  / size.width
+        let heightRatio = targetSize.height / size.height
+
+        let newSize = CGSize(width: size.width * widthRatio, height: size.height * heightRatio)
+        let rect = CGRect(x: 0, y: 0, width: newSize.width, height: newSize.height)
+
+        UIGraphicsBeginImageContextWithOptions(newSize, false, 0.0)
+        image.draw(in: rect)
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+
+        return newImage!.withRenderingMode(.alwaysOriginal)
     }
     
     @objc private func handleViewTap() {
