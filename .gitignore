@@ -76,3 +76,22 @@ TestIonix/Pods/Alamofire/Source/Alamofire.swift
 TestIonix/Pods/Alamofire/Source/AFError.swift
 TestIonix/Pods/Alamofire/README.md
 TestIonix/Pods/Alamofire/LICENSE
+TestIonix/Pods/AlamofireImage/LICENSE
+TestIonix/Pods/AlamofireImage/README.md
+TestIonix/Pods/AlamofireImage/Source/AFIError.swift
+TestIonix/Pods/AlamofireImage/Source/Image.swift
+TestIonix/Pods/AlamofireImage/Source/ImageCache.swift
+TestIonix/Pods/AlamofireImage/Source/ImageDownloader.swift
+TestIonix/Pods/AlamofireImage/Source/ImageFilter.swift
+TestIonix/Pods/AlamofireImage/Source/Request+AlamofireImage.swift
+TestIonix/Pods/AlamofireImage/Source/UIButton+AlamofireImage.swift
+TestIonix/Pods/AlamofireImage/Source/UIImage+AlamofireImage.swift
+TestIonix/Pods/AlamofireImage/Source/UIImageView+AlamofireImage.swift
+TestIonix/Pods/Pods.xcodeproj/xcuserdata/edwardpizzurro.xcuserdatad/xcschemes/AlamofireImage.xcscheme
+TestIonix/Pods/Target Support Files/AlamofireImage/AlamofireImage-dummy.m
+TestIonix/Pods/Target Support Files/AlamofireImage/AlamofireImage-Info.plist
+TestIonix/Pods/Target Support Files/AlamofireImage/AlamofireImage-prefix.pch
+TestIonix/Pods/Target Support Files/AlamofireImage/AlamofireImage-umbrella.h
+TestIonix/Pods/Target Support Files/AlamofireImage/AlamofireImage.debug.xcconfig
+TestIonix/Pods/Target Support Files/AlamofireImage/AlamofireImage.modulemap
+TestIonix/Pods/Target Support Files/AlamofireImage/AlamofireImage.release.xcconfig

@@ -9,5 +9,6 @@ target 'TestIonix' do
 
   pod 'KeychainSwift', '~> 20.0'
   pod 'Alamofire'
+  pod 'AlamofireImage'
 
 end

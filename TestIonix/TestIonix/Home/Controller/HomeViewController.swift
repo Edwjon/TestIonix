@@ -16,6 +16,7 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
         let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
         cv.translatesAutoresizingMaskIntoConstraints = false
         cv.isScrollEnabled = true
+        cv.backgroundColor = UIColor(red: 249/255, green: 249/255, blue: 249/255, alpha: 1)
         return cv
     }()
     
@@ -75,8 +76,8 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! PostCollectionViewCell
     
-        // Configure the cell
-//        cell.backgroundColor = .red
+        let post = posts[indexPath.item]
+        cell.configure(with: post)
         
         return cell
     }
