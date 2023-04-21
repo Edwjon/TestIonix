@@ -16,6 +16,8 @@
 		472E1B1229F1DE4600D41C87 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472E1B1129F1DE4600D41C87 /* CameraViewController.swift */; };
 		472E1B1429F1E7AC00D41C87 /* PushNotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472E1B1329F1E7AC00D41C87 /* PushNotificationsViewController.swift */; };
 		472E1B1629F1E8D900D41C87 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472E1B1529F1E8D900D41C87 /* LocationViewController.swift */; };
+		47A77E5329F20C650044F541 /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A77E5229F20C650044F541 /* ApiResponse.swift */; };
+		47A77E5529F20C6F0044F541 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A77E5429F20C6F0044F541 /* Post.swift */; };
 		47F732CF29F1F5F2000FEB32 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F732CE29F1F5F2000FEB32 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +32,8 @@
 		472E1B1129F1DE4600D41C87 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		472E1B1329F1E7AC00D41C87 /* PushNotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationsViewController.swift; sourceTree = "<group>"; };
 		472E1B1529F1E8D900D41C87 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		47A77E5229F20C650044F541 /* ApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
+		47A77E5429F20C6F0044F541 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		47F732CE29F1F5F2000FEB32 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		54C4397C00259660A4EB48F2 /* Pods-TestIonix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestIonix.debug.xcconfig"; path = "Target Support Files/Pods-TestIonix/Pods-TestIonix.debug.xcconfig"; sourceTree = "<group>"; };
 		5EAD2FAE4C027D99C6A7096E /* Pods-TestIonix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestIonix.release.xcconfig"; path = "Target Support Files/Pods-TestIonix/Pods-TestIonix.release.xcconfig"; sourceTree = "<group>"; };
@@ -79,6 +83,7 @@
 			children = (
 				472E1AFC29F1DA6500D41C87 /* AppDelegate.swift */,
 				472E1AFE29F1DA6500D41C87 /* SceneDelegate.swift */,
+				47A77E5129F20C320044F541 /* Networking */,
 				47F732CD29F1F5E5000FEB32 /* Home */,
 				472E1B1029F1DE0700D41C87 /* Onboarding */,
 				472E1B0529F1DA6600D41C87 /* Assets.xcassets */,
@@ -99,10 +104,43 @@
 			path = Onboarding;
 			sourceTree = "<group>";
 		};
-		47F732CD29F1F5E5000FEB32 /* Home */ = {
+		47A77E4E29F20C080044F541 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				47A77E5229F20C650044F541 /* ApiResponse.swift */,
+				47A77E5429F20C6F0044F541 /* Post.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		47A77E4F29F20C0E0044F541 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		47A77E5029F20C150044F541 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				47F732CE29F1F5F2000FEB32 /* HomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		47A77E5129F20C320044F541 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		47F732CD29F1F5E5000FEB32 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				47A77E4E29F20C080044F541 /* Model */,
+				47A77E4F29F20C0E0044F541 /* View */,
+				47A77E5029F20C150044F541 /* Controller */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -235,6 +273,8 @@
 				472E1B1429F1E7AC00D41C87 /* PushNotificationsViewController.swift in Sources */,
 				472E1B1629F1E8D900D41C87 /* LocationViewController.swift in Sources */,
 				472E1AFD29F1DA6500D41C87 /* AppDelegate.swift in Sources */,
+				47A77E5329F20C650044F541 /* ApiResponse.swift in Sources */,
+				47A77E5529F20C6F0044F541 /* Post.swift in Sources */,
 				47F732CF29F1F5F2000FEB32 /* HomeViewController.swift in Sources */,
 				472E1AFF29F1DA6500D41C87 /* SceneDelegate.swift in Sources */,
 			);
