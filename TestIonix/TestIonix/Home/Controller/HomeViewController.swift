@@ -15,6 +15,7 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
         layout.scrollDirection = .vertical
         let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
         cv.translatesAutoresizingMaskIntoConstraints = false
+        cv.isScrollEnabled = true
         return cv
     }()
     
@@ -37,7 +38,7 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
         collectionView.delegate = self
         
         // Register cell classes
-        self.collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell")
+        self.collectionView.register(PostCollectionViewCell.self, forCellWithReuseIdentifier: "cell")
         
         // Load posts
         fetchFilteredPosts()
@@ -72,15 +73,15 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! PostCollectionViewCell
     
         // Configure the cell
-        cell.backgroundColor = .red
+//        cell.backgroundColor = .red
         
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.frame.width, height: 50)
+        return CGSize(width: collectionView.frame.width, height: 300)
     }
 }
