@@ -8,7 +8,7 @@
 import Foundation
 import Alamofire
 
-class API {
+class Api {
     private let baseURL = "https://www.reddit.com"
     
     func fetchPosts(completion: @escaping (Result<[Post], Error>) -> Void) {
