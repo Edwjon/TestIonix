@@ -27,4 +27,19 @@ class Api {
             }
         }
     }
+    
+    func searchPosts(query: String, limit: Int = 100, completion: @escaping (Result<([Post], String?), Error>) -> Void) {
+        let baseSearchUrl = "https://www.reddit.com/r/chile/search.json"
+        let url = "\(baseSearchUrl)?q=\(query)&limit=\(limit)"
+
+        AF.request(url).responseDecodable(of: ApiResponse.self) { response in
+            switch response.result {
+            case .success(let apiResponse):
+                let posts = apiResponse.data.children.map { $0.data }
+                completion(.success((posts, apiResponse.data.after)))
+            case .failure(let error):
+                completion(.failure(error))
+            }
+        }
+    }
 }
