@@ -22,6 +22,7 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     private var posts: [Post] = []
     private let api = Api()
+    private var after: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,15 +47,16 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     }
     
     private func fetchFilteredPosts() {
-        api.fetchPosts { [weak self] result in
+        api.fetchPosts(limit: 100, after: after) { [weak self] result in
             guard let self = self else { return }
             switch result {
-            case .success(let fetchedPosts):
+            case .success((let fetchedPosts, let newAfter)):
                 let filteredPosts = fetchedPosts.filter { post in
                     post.postHint == "image" //&& post.linkFlairText == "shiposting"
                 }
                 DispatchQueue.main.async {
-                    self.posts = filteredPosts
+                    self.posts.append(contentsOf: filteredPosts)
+                    self.after = newAfter
                     self.collectionView.reloadData()
                 }
             case .failure(let error):
@@ -84,5 +86,15 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: collectionView.frame.width, height: 300)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        loadMorePostsIfNeeded(currentIndexPath: indexPath)
+    }
+    
+    private func loadMorePostsIfNeeded(currentIndexPath indexPath: IndexPath) {
+        if indexPath.item == posts.count - 1 {
+            fetchFilteredPosts()
+        }
     }
 }
