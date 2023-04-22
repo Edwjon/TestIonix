@@ -12,14 +12,14 @@ import KeychainSwift
 
 class PushNotificationsViewController: UIViewController {
     
-    private let keychain = KeychainSwift()
-    private let pushNotificationAccessKey = "com.testIonix.pushNotificationAccess"
+    let keychain = KeychainSwift()
+    let pushNotificationAccessKey = "com.testIonix.pushNotificationAccess"
     
-    private let imageView = UIImageView()
-    private let titleLabel = UILabel()
-    private let descriptionLabel = UILabel()
-    private let allowButton = UIButton(type: .system)
-    private let cancelButton = UIButton(type: .system)
+    let imageView = UIImageView()
+    let titleLabel = UILabel()
+    let descriptionLabel = UILabel()
+    let allowButton = UIButton(type: .system)
+    let cancelButton = UIButton(type: .system)
     
     var onCancelTapped: (() -> Void)?
     
