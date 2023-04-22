@@ -1,0 +1,97 @@
+
+TestIonix/Pods/Target Support Files/Pods-TestIonix/Pods-TestIonix.release.xcconfig
+TestIonix/Pods/Target Support Files/Pods-TestIonix/Pods-TestIonix.modulemap
+TestIonix/Pods/Target Support Files/Pods-TestIonix/Pods-TestIonix.debug.xcconfig
+TestIonix/Pods/Target Support Files/Pods-TestIonix/Pods-TestIonix-umbrella.h
+TestIonix/Pods/Target Support Files/Pods-TestIonix/Pods-TestIonix-Info.plist
+TestIonix/Pods/Target Support Files/Pods-TestIonix/Pods-TestIonix-frameworks.sh
+TestIonix/Pods/Target Support Files/Pods-TestIonix/Pods-TestIonix-frameworks-Release-output-files.xcfilelist
+TestIonix/Pods/Target Support Files/Pods-TestIonix/Pods-TestIonix-frameworks-Release-input-files.xcfilelist
+TestIonix/Pods/Target Support Files/Pods-TestIonix/Pods-TestIonix-frameworks-Debug-output-files.xcfilelist
+TestIonix/Pods/Target Support Files/Pods-TestIonix/Pods-TestIonix-frameworks-Debug-input-files.xcfilelist
+TestIonix/Pods/Target Support Files/Pods-TestIonix/Pods-TestIonix-dummy.m
+TestIonix/Pods/Target Support Files/Pods-TestIonix/Pods-TestIonix-acknowledgements.plist
+TestIonix/Pods/Target Support Files/Pods-TestIonix/Pods-TestIonix-acknowledgements.markdown
+TestIonix/Pods/Target Support Files/KeychainSwift/KeychainSwift.release.xcconfig
+TestIonix/Pods/Target Support Files/KeychainSwift/KeychainSwift.modulemap
+TestIonix/Pods/Target Support Files/KeychainSwift/KeychainSwift.debug.xcconfig
+TestIonix/Pods/Target Support Files/KeychainSwift/KeychainSwift-umbrella.h
+TestIonix/Pods/Target Support Files/KeychainSwift/KeychainSwift-prefix.pch
+TestIonix/Pods/Target Support Files/KeychainSwift/KeychainSwift-Info.plist
+TestIonix/Pods/Target Support Files/KeychainSwift/KeychainSwift-dummy.m
+TestIonix/Pods/Pods.xcodeproj/xcuserdata/edwardpizzurro.xcuserdatad/xcschemes/xcschememanagement.plist
+TestIonix/Pods/Pods.xcodeproj/xcuserdata/edwardpizzurro.xcuserdatad/xcschemes/Pods-TestIonix.xcscheme
+TestIonix/Pods/Pods.xcodeproj/xcuserdata/edwardpizzurro.xcuserdatad/xcschemes/KeychainSwift.xcscheme
+TestIonix/Pods/Pods.xcodeproj/project.pbxproj
+TestIonix/Pods/Manifest.lock
+TestIonix/Pods/KeychainSwift/Sources/TegKeychainConstants.swift
+TestIonix/Pods/KeychainSwift/Sources/KeychainSwiftAccessOptions.swift
+TestIonix/Pods/KeychainSwift/Sources/KeychainSwift.swift
+TestIonix/Pods/KeychainSwift/README.md
+TestIonix/Pods/KeychainSwift/LICENSE
+TestIonix/TestIonix.xcodeproj/xcuserdata/edwardpizzurro.xcuserdatad/xcschemes/xcschememanagement.plist
+TestIonix/Pods/Target Support Files/Alamofire/Alamofire.release.xcconfig
+TestIonix/Pods/Target Support Files/Alamofire/Alamofire.modulemap
+TestIonix/Pods/Target Support Files/Alamofire/Alamofire.debug.xcconfig
+TestIonix/Pods/Target Support Files/Alamofire/Alamofire-umbrella.h
+TestIonix/Pods/Target Support Files/Alamofire/Alamofire-prefix.pch
+TestIonix/Pods/Target Support Files/Alamofire/Alamofire-Info.plist
+TestIonix/Pods/Target Support Files/Alamofire/Alamofire-dummy.m
+TestIonix/Pods/Pods.xcodeproj/xcuserdata/edwardpizzurro.xcuserdatad/xcschemes/Alamofire.xcscheme
+TestIonix/Pods/Alamofire/Source/Validation.swift
+TestIonix/Pods/Alamofire/Source/URLSessionConfiguration+Alamofire.swift
+TestIonix/Pods/Alamofire/Source/URLRequest+Alamofire.swift
+TestIonix/Pods/Alamofire/Source/URLEncodedFormEncoder.swift
+TestIonix/Pods/Alamofire/Source/URLConvertible+URLRequestConvertible.swift
+TestIonix/Pods/Alamofire/Source/StringEncoding+Alamofire.swift
+TestIonix/Pods/Alamofire/Source/SessionDelegate.swift
+TestIonix/Pods/Alamofire/Source/Session.swift
+TestIonix/Pods/Alamofire/Source/ServerTrustEvaluation.swift
+TestIonix/Pods/Alamofire/Source/RetryPolicy.swift
+TestIonix/Pods/Alamofire/Source/Result+Alamofire.swift
+TestIonix/Pods/Alamofire/Source/ResponseSerialization.swift
+TestIonix/Pods/Alamofire/Source/Response.swift
+TestIonix/Pods/Alamofire/Source/RequestTaskMap.swift
+TestIonix/Pods/Alamofire/Source/RequestInterceptor.swift
+TestIonix/Pods/Alamofire/Source/Request.swift
+TestIonix/Pods/Alamofire/Source/RedirectHandler.swift
+TestIonix/Pods/Alamofire/Source/Protected.swift
+TestIonix/Pods/Alamofire/Source/ParameterEncoding.swift
+TestIonix/Pods/Alamofire/Source/ParameterEncoder.swift
+TestIonix/Pods/Alamofire/Source/OperationQueue+Alamofire.swift
+TestIonix/Pods/Alamofire/Source/Notifications.swift
+TestIonix/Pods/Alamofire/Source/NetworkReachabilityManager.swift
+TestIonix/Pods/Alamofire/Source/MultipartUpload.swift
+TestIonix/Pods/Alamofire/Source/MultipartFormData.swift
+TestIonix/Pods/Alamofire/Source/HTTPMethod.swift
+TestIonix/Pods/Alamofire/Source/HTTPHeaders.swift
+TestIonix/Pods/Alamofire/Source/EventMonitor.swift
+TestIonix/Pods/Alamofire/Source/DispatchQueue+Alamofire.swift
+TestIonix/Pods/Alamofire/Source/Concurrency.swift
+TestIonix/Pods/Alamofire/Source/Combine.swift
+TestIonix/Pods/Alamofire/Source/CachedResponseHandler.swift
+TestIonix/Pods/Alamofire/Source/AuthenticationInterceptor.swift
+TestIonix/Pods/Alamofire/Source/AlamofireExtended.swift
+TestIonix/Pods/Alamofire/Source/Alamofire.swift
+TestIonix/Pods/Alamofire/Source/AFError.swift
+TestIonix/Pods/Alamofire/README.md
+TestIonix/Pods/Alamofire/LICENSE
+TestIonix/Pods/AlamofireImage/LICENSE
+TestIonix/Pods/AlamofireImage/README.md
+TestIonix/Pods/AlamofireImage/Source/AFIError.swift
+TestIonix/Pods/AlamofireImage/Source/Image.swift
+TestIonix/Pods/AlamofireImage/Source/ImageCache.swift
+TestIonix/Pods/AlamofireImage/Source/ImageDownloader.swift
+TestIonix/Pods/AlamofireImage/Source/ImageFilter.swift
+TestIonix/Pods/AlamofireImage/Source/Request+AlamofireImage.swift
+TestIonix/Pods/AlamofireImage/Source/UIButton+AlamofireImage.swift
+TestIonix/Pods/AlamofireImage/Source/UIImage+AlamofireImage.swift
+TestIonix/Pods/AlamofireImage/Source/UIImageView+AlamofireImage.swift
+TestIonix/Pods/Pods.xcodeproj/xcuserdata/edwardpizzurro.xcuserdatad/xcschemes/AlamofireImage.xcscheme
+TestIonix/Pods/Target Support Files/AlamofireImage/AlamofireImage-dummy.m
+TestIonix/Pods/Target Support Files/AlamofireImage/AlamofireImage-Info.plist
+TestIonix/Pods/Target Support Files/AlamofireImage/AlamofireImage-prefix.pch
+TestIonix/Pods/Target Support Files/AlamofireImage/AlamofireImage-umbrella.h
+TestIonix/Pods/Target Support Files/AlamofireImage/AlamofireImage.debug.xcconfig
+TestIonix/Pods/Target Support Files/AlamofireImage/AlamofireImage.modulemap
+TestIonix/Pods/Target Support Files/AlamofireImage/AlamofireImage.release.xcconfig

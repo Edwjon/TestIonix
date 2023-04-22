@@ -9,25 +9,64 @@
 /* Begin PBXBuildFile section */
 		472E1AFD29F1DA6500D41C87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472E1AFC29F1DA6500D41C87 /* AppDelegate.swift */; };
 		472E1AFF29F1DA6500D41C87 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472E1AFE29F1DA6500D41C87 /* SceneDelegate.swift */; };
-		472E1B0129F1DA6500D41C87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472E1B0029F1DA6500D41C87 /* ViewController.swift */; };
-		472E1B0429F1DA6500D41C87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 472E1B0229F1DA6500D41C87 /* Main.storyboard */; };
+		472E1B0129F1DA6500D41C87 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472E1B0029F1DA6500D41C87 /* OnboardingViewController.swift */; };
 		472E1B0629F1DA6600D41C87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 472E1B0529F1DA6600D41C87 /* Assets.xcassets */; };
 		472E1B0929F1DA6600D41C87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 472E1B0729F1DA6600D41C87 /* LaunchScreen.storyboard */; };
+		472E1B1229F1DE4600D41C87 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472E1B1129F1DE4600D41C87 /* CameraViewController.swift */; };
+		472E1B1429F1E7AC00D41C87 /* PushNotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472E1B1329F1E7AC00D41C87 /* PushNotificationsViewController.swift */; };
+		472E1B1629F1E8D900D41C87 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472E1B1529F1E8D900D41C87 /* LocationViewController.swift */; };
+		477E232529F440EA0046873B /* TestIonixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477E232429F440EA0046873B /* TestIonixTests.swift */; };
+		47A77E5329F20C650044F541 /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A77E5229F20C650044F541 /* ApiResponse.swift */; };
+		47A77E5529F20C6F0044F541 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A77E5429F20C6F0044F541 /* Post.swift */; };
+		47A77E5729F20CA60044F541 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A77E5629F20CA60044F541 /* Api.swift */; };
+		47A77E5929F213690044F541 /* PostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A77E5829F213690044F541 /* PostCollectionViewCell.swift */; };
+		47F732CF29F1F5F2000FEB32 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F732CE29F1F5F2000FEB32 /* HomeViewController.swift */; };
+		D211C6E868A01D1050085FA8 /* Pods_TestIonix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D7B599C06A5DE69EEEE4A7 /* Pods_TestIonix.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		477E232629F440EA0046873B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 472E1AF129F1DA6500D41C87 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 472E1AF829F1DA6500D41C87;
+			remoteInfo = TestIonix;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		03A9127E6363CB32F5F4F779 /* Pods-TestIonix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestIonix.release.xcconfig"; path = "Target Support Files/Pods-TestIonix/Pods-TestIonix.release.xcconfig"; sourceTree = "<group>"; };
 		472E1AF929F1DA6500D41C87 /* TestIonix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestIonix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		472E1AFC29F1DA6500D41C87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		472E1AFE29F1DA6500D41C87 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		472E1B0029F1DA6500D41C87 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		472E1B0329F1DA6500D41C87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		472E1B0029F1DA6500D41C87 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		472E1B0529F1DA6600D41C87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		472E1B0829F1DA6600D41C87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		472E1B0A29F1DA6600D41C87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		472E1B1129F1DE4600D41C87 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		472E1B1329F1E7AC00D41C87 /* PushNotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationsViewController.swift; sourceTree = "<group>"; };
+		472E1B1529F1E8D900D41C87 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		477E232229F440EA0046873B /* TestIonixTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestIonixTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		477E232429F440EA0046873B /* TestIonixTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestIonixTests.swift; sourceTree = "<group>"; };
+		47A77E5229F20C650044F541 /* ApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
+		47A77E5429F20C6F0044F541 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		47A77E5629F20CA60044F541 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		47A77E5829F213690044F541 /* PostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionViewCell.swift; sourceTree = "<group>"; };
+		47F732CE29F1F5F2000FEB32 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		D2D7B599C06A5DE69EEEE4A7 /* Pods_TestIonix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestIonix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4880062002B9F4AE4BBF5B9 /* Pods-TestIonix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestIonix.debug.xcconfig"; path = "Target Support Files/Pods-TestIonix/Pods-TestIonix.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		472E1AF629F1DA6500D41C87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D211C6E868A01D1050085FA8 /* Pods_TestIonix.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		477E231F29F440EA0046873B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,7 +80,10 @@
 			isa = PBXGroup;
 			children = (
 				472E1AFB29F1DA6500D41C87 /* TestIonix */,
+				477E232329F440EA0046873B /* TestIonixTests */,
 				472E1AFA29F1DA6500D41C87 /* Products */,
+				B173E533514B2AD075EE13B0 /* Pods */,
+				D2B4562CD2BFAC5BE2B34D85 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -49,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				472E1AF929F1DA6500D41C87 /* TestIonix.app */,
+				477E232229F440EA0046873B /* TestIonixTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,13 +101,93 @@
 			children = (
 				472E1AFC29F1DA6500D41C87 /* AppDelegate.swift */,
 				472E1AFE29F1DA6500D41C87 /* SceneDelegate.swift */,
-				472E1B0029F1DA6500D41C87 /* ViewController.swift */,
-				472E1B0229F1DA6500D41C87 /* Main.storyboard */,
+				47A77E5129F20C320044F541 /* Networking */,
+				47F732CD29F1F5E5000FEB32 /* Home */,
+				472E1B1029F1DE0700D41C87 /* Onboarding */,
 				472E1B0529F1DA6600D41C87 /* Assets.xcassets */,
 				472E1B0729F1DA6600D41C87 /* LaunchScreen.storyboard */,
 				472E1B0A29F1DA6600D41C87 /* Info.plist */,
 			);
 			path = TestIonix;
+			sourceTree = "<group>";
+		};
+		472E1B1029F1DE0700D41C87 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				472E1B0029F1DA6500D41C87 /* OnboardingViewController.swift */,
+				472E1B1129F1DE4600D41C87 /* CameraViewController.swift */,
+				472E1B1329F1E7AC00D41C87 /* PushNotificationsViewController.swift */,
+				472E1B1529F1E8D900D41C87 /* LocationViewController.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		477E232329F440EA0046873B /* TestIonixTests */ = {
+			isa = PBXGroup;
+			children = (
+				477E232429F440EA0046873B /* TestIonixTests.swift */,
+			);
+			path = TestIonixTests;
+			sourceTree = "<group>";
+		};
+		47A77E4E29F20C080044F541 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				47A77E5229F20C650044F541 /* ApiResponse.swift */,
+				47A77E5429F20C6F0044F541 /* Post.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		47A77E4F29F20C0E0044F541 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				47A77E5829F213690044F541 /* PostCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		47A77E5029F20C150044F541 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				47F732CE29F1F5F2000FEB32 /* HomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		47A77E5129F20C320044F541 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				47A77E5629F20CA60044F541 /* Api.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		47F732CD29F1F5E5000FEB32 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				47A77E4E29F20C080044F541 /* Model */,
+				47A77E4F29F20C0E0044F541 /* View */,
+				47A77E5029F20C150044F541 /* Controller */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B173E533514B2AD075EE13B0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E4880062002B9F4AE4BBF5B9 /* Pods-TestIonix.debug.xcconfig */,
+				03A9127E6363CB32F5F4F779 /* Pods-TestIonix.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D2B4562CD2BFAC5BE2B34D85 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2D7B599C06A5DE69EEEE4A7 /* Pods_TestIonix.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +197,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 472E1B0D29F1DA6600D41C87 /* Build configuration list for PBXNativeTarget "TestIonix" */;
 			buildPhases = (
+				3EF4A567FA8EE0F6929CCB13 /* [CP] Check Pods Manifest.lock */,
 				472E1AF529F1DA6500D41C87 /* Sources */,
 				472E1AF629F1DA6500D41C87 /* Frameworks */,
 				472E1AF729F1DA6500D41C87 /* Resources */,
+				26671370DB9D87BAE0493CFE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -86,6 +211,24 @@
 			productName = TestIonix;
 			productReference = 472E1AF929F1DA6500D41C87 /* TestIonix.app */;
 			productType = "com.apple.product-type.application";
+		};
+		477E232129F440EA0046873B /* TestIonixTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 477E232A29F440EA0046873B /* Build configuration list for PBXNativeTarget "TestIonixTests" */;
+			buildPhases = (
+				477E231E29F440EA0046873B /* Sources */,
+				477E231F29F440EA0046873B /* Frameworks */,
+				477E232029F440EA0046873B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				477E232729F440EA0046873B /* PBXTargetDependency */,
+			);
+			name = TestIonixTests;
+			productName = TestIonixTests;
+			productReference = 477E232229F440EA0046873B /* TestIonixTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -99,6 +242,10 @@
 				TargetAttributes = {
 					472E1AF829F1DA6500D41C87 = {
 						CreatedOnToolsVersion = 14.2;
+					};
+					477E232129F440EA0046873B = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 472E1AF829F1DA6500D41C87;
 					};
 				};
 			};
@@ -116,6 +263,7 @@
 			projectRoot = "";
 			targets = (
 				472E1AF829F1DA6500D41C87 /* TestIonix */,
+				477E232129F440EA0046873B /* TestIonixTests */,
 			);
 		};
 /* End PBXProject section */
@@ -127,34 +275,98 @@
 			files = (
 				472E1B0929F1DA6600D41C87 /* LaunchScreen.storyboard in Resources */,
 				472E1B0629F1DA6600D41C87 /* Assets.xcassets in Resources */,
-				472E1B0429F1DA6500D41C87 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		477E232029F440EA0046873B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		26671370DB9D87BAE0493CFE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestIonix/Pods-TestIonix-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestIonix/Pods-TestIonix-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestIonix/Pods-TestIonix-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3EF4A567FA8EE0F6929CCB13 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestIonix-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		472E1AF529F1DA6500D41C87 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				472E1B0129F1DA6500D41C87 /* ViewController.swift in Sources */,
+				472E1B0129F1DA6500D41C87 /* OnboardingViewController.swift in Sources */,
+				472E1B1229F1DE4600D41C87 /* CameraViewController.swift in Sources */,
+				472E1B1429F1E7AC00D41C87 /* PushNotificationsViewController.swift in Sources */,
+				472E1B1629F1E8D900D41C87 /* LocationViewController.swift in Sources */,
 				472E1AFD29F1DA6500D41C87 /* AppDelegate.swift in Sources */,
+				47A77E5329F20C650044F541 /* ApiResponse.swift in Sources */,
+				47A77E5529F20C6F0044F541 /* Post.swift in Sources */,
+				47F732CF29F1F5F2000FEB32 /* HomeViewController.swift in Sources */,
+				47A77E5929F213690044F541 /* PostCollectionViewCell.swift in Sources */,
+				47A77E5729F20CA60044F541 /* Api.swift in Sources */,
 				472E1AFF29F1DA6500D41C87 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		477E231E29F440EA0046873B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				477E232529F440EA0046873B /* TestIonixTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		472E1B0229F1DA6500D41C87 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				472E1B0329F1DA6500D41C87 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
+/* Begin PBXTargetDependency section */
+		477E232729F440EA0046873B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 472E1AF829F1DA6500D41C87 /* TestIonix */;
+			targetProxy = 477E232629F440EA0046873B /* PBXContainerItemProxy */;
 		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
 		472E1B0729F1DA6600D41C87 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,6 +494,7 @@
 		};
 		472E1B0E29F1DA6600D41C87 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4880062002B9F4AE4BBF5B9 /* Pods-TestIonix.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -291,9 +504,9 @@
 				INFOPLIST_FILE = TestIonix/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +522,7 @@
 		};
 		472E1B0F29F1DA6600D41C87 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03A9127E6363CB32F5F4F779 /* Pods-TestIonix.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -318,9 +532,9 @@
 				INFOPLIST_FILE = TestIonix/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -331,6 +545,40 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		477E232829F440EA0046873B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = prueba.TestIonixTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestIonix.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TestIonix";
+			};
+			name = Debug;
+		};
+		477E232929F440EA0046873B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = prueba.TestIonixTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestIonix.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TestIonix";
 			};
 			name = Release;
 		};
@@ -351,6 +599,15 @@
 			buildConfigurations = (
 				472E1B0E29F1DA6600D41C87 /* Debug */,
 				472E1B0F29F1DA6600D41C87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		477E232A29F440EA0046873B /* Build configuration list for PBXNativeTarget "TestIonixTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				477E232829F440EA0046873B /* Debug */,
+				477E232929F440EA0046873B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
