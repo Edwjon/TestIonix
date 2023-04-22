@@ -4,10 +4,11 @@ Reddit Posts Viewer is an iOS application that allows you to view Reddit posts i
 
 ## Requirements
 
-Xcode 13+
-iOS 16.0+
-Swift 5.5+
-Getting Started
+- Xcode 13+
+- iOS 16.0+
+- Swift 5.5+
+
+## Getting Started
 
 To get started with the project, clone the repository and open the .xcworkspace file in Xcode.
 
@@ -16,6 +17,9 @@ git clone https://github.com/yourusername/reddit-posts-viewer.git
 cd reddit-posts-viewer
 open RedditPostsViewer.xcworkspace
 ```
+
+The main branch holds all of the main development
+
 ## Dependencies
 
 The project uses CocoaPods as a dependency manager. The following pods are included:
