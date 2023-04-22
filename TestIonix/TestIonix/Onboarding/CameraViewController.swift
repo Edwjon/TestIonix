@@ -33,7 +33,7 @@ class CameraViewController: UIViewController {
 
         // Customize imageView
         imageView.contentMode = .scaleAspectFit
-        imageView.backgroundColor = .red
+        imageView.image = UIImage(named: "camera")
         view.addSubview(imageView)
 
         // Customize titleLabel

@@ -34,7 +34,7 @@ class PushNotificationsViewController: UIViewController {
 
         // Customize imageView
         imageView.contentMode = .scaleAspectFit
-        imageView.backgroundColor = .red
+        imageView.image = UIImage(named: "notifications")
         view.addSubview(imageView)
 
         // Customize titleLabel

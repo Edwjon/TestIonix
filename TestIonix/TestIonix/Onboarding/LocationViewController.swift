@@ -27,6 +27,7 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate {
         super.viewDidLoad()
         setupViews()
         setupConstraints()
+        UserDefaults.standard.set(true, forKey: "isFirstLaunch")
     }
 
     private func setupViews() {
@@ -34,7 +35,7 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate {
 
         // Customize imageView
         imageView.contentMode = .scaleAspectFit
-        imageView.backgroundColor = .red
+        imageView.image = UIImage(named: "location")
         view.addSubview(imageView)
 
         // Customize titleLabel
@@ -119,11 +120,14 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate {
             switch status {
             case .authorizedWhenInUse, .authorizedAlways:
                 self.keychain.set(true, forKey: self.locationAccessKey)
+                self.onCancelTapped?()
                 // The user has granted access to the location
             case .denied, .restricted:
                 self.keychain.set(false, forKey: self.locationAccessKey)
+                self.onCancelTapped?()
                 // The user has denied access to the location
             default:
+                self.onCancelTapped?()
                 // The location authorization status is not determined or not applicable
                 break
             }

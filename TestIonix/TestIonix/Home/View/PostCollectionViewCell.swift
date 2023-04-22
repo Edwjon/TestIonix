@@ -31,6 +31,12 @@ class PostCollectionViewCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        imageView.af.cancelImageRequest()
+        imageView.image = nil
+    }
+    
     private func setupUI() {
         
         generalView.backgroundColor = .clear
@@ -60,7 +66,6 @@ class PostCollectionViewCell: UICollectionViewCell {
         
         imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true
-        imageView.backgroundColor = .orange
         
         titleLabel.numberOfLines = 0
         titleLabel.font = UIFont.boldSystemFont(ofSize: 20)

@@ -19,10 +19,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(windowScene: windowScene)
         
         let isFirstLaunch = UserDefaults.standard.bool(forKey: "isFirstLaunch")
-//        UserDefaults.standard.set(false, forKey: "isFirstLaunch")
         if !isFirstLaunch {
-            UserDefaults.standard.set(true, forKey: "isFirstLaunch")
-            let onboardingViewController = OnboardingViewController(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
+            let onboardingViewController = OnboardingViewController()
             window?.rootViewController = onboardingViewController
         } else {
             let homeViewController = UINavigationController(rootViewController: HomeViewController()) 
