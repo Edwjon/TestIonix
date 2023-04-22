@@ -52,6 +52,6 @@ Once the onboarding process is complete, the main view displays a list of Reddit
 
 ## Unit Tests
 
-The project includes unit tests for some key components, such as the PushNotificationsViewController and the LocationViewController. These tests ensure that the view controllers load correctly, user preferences are stored properly, and the UI elements are present.
+The project includes unit tests for some key components, such as the PushNotificationsViewController, LocationViewController, CameraViewController, OnboardingViewController and HomeViewController. These tests ensure that the view controllers load correctly, user preferences are stored properly, and the UI elements are present.
 
 To run the unit tests, select the test target in Xcode and click the "Run Tests" button or use the keyboard shortcut Cmd + U.
