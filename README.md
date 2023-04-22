@@ -20,9 +20,10 @@ open RedditPostsViewer.xcworkspace
 
 The project uses CocoaPods as a dependency manager. The following pods are included:
 
-Alamofire (5.4.0+): A networking library for making HTTP requests
-AlamofireImage (4.1.0+): An image component library for Alamofire
-KeychainSwift (23.0.0+): A helper library for working with the iOS Keychain
+- Alamofire (5.4.0+): A networking library for making HTTP requests
+- AlamofireImage (4.1.0+): An image component library for Alamofire
+- KeychainSwift (23.0.0+): A helper library for working with the iOS Keychain
+
 Make sure you have CocoaPods installed on your machine. If not, run the following command:
 
 ```ogdl
@@ -40,9 +41,9 @@ After installing the dependencies, open the RedditPostsViewer.xcworkspace file t
 
 The project follows the Model-View-Controller (MVC) design pattern. This pattern separates the application logic into three interconnected components:
 
-Model: Represents the data and business logic of the application
-View: Displays the data to the user and receives user interactions
-Controller: Acts as an intermediary between the Model and View, updating the Model with user interactions and updating the View with new data
+- Model: Represents the data and business logic of the application
+- View: Displays the data to the user and receives user interactions
+- Controller: Acts as an intermediary between the Model and View, updating the Model with user interactions and updating the View with new data
 
 ## Initialization Process
 
