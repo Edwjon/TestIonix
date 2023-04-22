@@ -8,7 +8,7 @@
 import UIKit
 
 class OnboardingViewController: UIPageViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
-
+    
     private lazy var orderedViewControllers: [UIViewController] = {
         let cameraVC = CameraViewController()
         let pushNotificationVC = PushNotificationsViewController()
@@ -27,34 +27,32 @@ class OnboardingViewController: UIPageViewController, UIPageViewControllerDataSo
         return [cameraVC, pushNotificationVC, locationVC]
     }()
     
-    private func dismissOnboardingAndShowHome() {
-        let homeViewController = UINavigationController(rootViewController: HomeViewController()) 
-        
-        if let window = UIApplication.shared.windows.first {
-            window.rootViewController = homeViewController
-            UIView.transition(with: window, duration: 0.3, options: .transitionCrossDissolve, animations: nil, completion: nil)
-        }
-    }
-    
     private var pageControl = UIPageControl()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         dataSource = self
         delegate = self
         
-        // Disable the default UIPageControl
-        for view in view.subviews {
-            if view is UIPageControl {
-                view.isHidden = true
-            }
-        }
         if let firstViewController = orderedViewControllers.first {
             setViewControllers([firstViewController], direction: .forward, animated: true, completion: nil)
         }
         
         configurePageControl()
+    }
+}
+
+//MARK: - Functionality Methods -
+extension OnboardingViewController {
+    
+    private func dismissOnboardingAndShowHome() {
+        let homeViewController = UINavigationController(rootViewController: HomeViewController())
+        
+        if let window = UIApplication.shared.windows.first {
+            window.rootViewController = homeViewController
+            UIView.transition(with: window, duration: 0.3, options: .transitionCrossDissolve, animations: nil, completion: nil)
+        }
     }
     
     private func goToNextViewController() {
@@ -64,9 +62,11 @@ class OnboardingViewController: UIPageViewController, UIPageViewControllerDataSo
             setViewControllers([nextViewController], direction: .forward, animated: true, completion: nil)
         }
     }
-    
-    // MARK: - UIPageViewControllerDataSource
+}
 
+// MARK: - UIPageViewControllerDataSource
+extension OnboardingViewController {
+    
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         guard let viewControllerIndex = orderedViewControllers.firstIndex(of: viewController) else {
             return nil
@@ -103,16 +103,18 @@ class OnboardingViewController: UIPageViewController, UIPageViewControllerDataSo
         
         return orderedViewControllers[nextIndex]
     }
-    
-    // MARK: - UIPageViewControllerDelegate
+}
 
+// MARK: - UIPageViewControllerDelegate
+extension OnboardingViewController {
+    
     func presentationCount(for pageViewController: UIPageViewController) -> Int {
         return orderedViewControllers.count
     }
     
     func presentationIndex(for pageViewController: UIPageViewController) -> Int {
         guard let firstViewController = viewControllers?.first,
-            let firstViewControllerIndex = orderedViewControllers.firstIndex(of: firstViewController) else {
+              let firstViewControllerIndex = orderedViewControllers.firstIndex(of: firstViewController) else {
             return 0
         }
         
@@ -126,8 +128,10 @@ class OnboardingViewController: UIPageViewController, UIPageViewControllerDataSo
             pageControl.currentPage = index
         }
     }
-    
-    // MARK: - PageControl
+}
+
+// MARK: - PageControl
+extension OnboardingViewController {
 
     private func configurePageControl() {
         pageControl = UIPageControl(frame: CGRect(x: 0, y: UIScreen.main.bounds.maxY - 50, width: UIScreen.main.bounds.width, height: 50))
