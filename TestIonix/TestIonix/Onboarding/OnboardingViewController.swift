@@ -9,7 +9,7 @@ import UIKit
 
 class OnboardingViewController: UIPageViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
     
-    private lazy var orderedViewControllers: [UIViewController] = {
+    lazy var orderedViewControllers: [UIViewController] = {
         let cameraVC = CameraViewController()
         let pushNotificationVC = PushNotificationsViewController()
         let locationVC = LocationViewController()
@@ -27,7 +27,7 @@ class OnboardingViewController: UIPageViewController, UIPageViewControllerDataSo
         return [cameraVC, pushNotificationVC, locationVC]
     }()
     
-    private var pageControl = UIPageControl()
+    var pageControl = UIPageControl()
     
     override func viewDidLoad() {
         super.viewDidLoad()

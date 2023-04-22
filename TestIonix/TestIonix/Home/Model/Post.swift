@@ -26,3 +26,25 @@ struct Post: Codable {
         case after
     }
 }
+
+extension Post {
+    static func mock(
+        linkFlairText: String? = "Mock Flair",
+        postHint: String? = "image",
+        title: String = "Mock Title",
+        url: String = "https://mockurl.com",
+        score: Int = 0,
+        numComments: Int = 0,
+        after: String? = "t3_mock_after"
+    ) -> Post {
+        return Post(
+            linkFlairText: linkFlairText,
+            postHint: postHint,
+            title: title,
+            url: url,
+            score: score,
+            numComments: numComments,
+            after: after
+        )
+    }
+}

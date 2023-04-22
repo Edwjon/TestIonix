@@ -20,7 +20,7 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
         return cv
     }()
     
-    private let searchBar: UISearchBar = {
+    let searchBar: UISearchBar = {
         let searchBar = UISearchBar()
         searchBar.translatesAutoresizingMaskIntoConstraints = false
         searchBar.placeholder = "Search"
@@ -66,12 +66,12 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     private let refreshControl = UIRefreshControl()
     
-    private var posts: [Post] = []
-    private let api = Api()
-    private var after: String?
+    var posts: [Post] = []
+    let api = Api()
+    var after: String?
     
-    private var isSearching = false
-    private var searchResults: [Post] = []
+    var isSearching = false
+    var searchResults: [Post] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -159,7 +159,7 @@ extension HomeViewController {
 //MARK: - Fetch Data Methos -
 extension HomeViewController {
     
-    private func fetchFilteredPosts() {
+    func fetchFilteredPosts() {
         activityIndicator.startAnimating()
         api.fetchPosts(limit: 100, after: after) { [weak self] result in
             guard let self = self else { return }
@@ -186,7 +186,7 @@ extension HomeViewController {
         }
     }
     
-    private func searchPosts(query: String, after: String? = nil) {
+    public func searchPosts(query: String, after: String? = nil, completion: @escaping (Result<Void, Error>) -> Void) {
         activityIndicator.startAnimating()
         api.searchPosts(query: query) { [weak self] result in
             guard let self = self else { return }
@@ -205,12 +205,14 @@ extension HomeViewController {
                     self.activityIndicator.stopAnimating()
                     self.collectionView.reloadData()
                     self.refreshControl.endRefreshing()
+                    completion(.success(()))
                 }
             case .failure(let error):
                 print("Error searching posts: \(error.localizedDescription)")
                 DispatchQueue.main.async {
                     self.showErrorAlert(message: "Error searching posts")
                     self.errorLabel.isHidden = false
+                    completion(.failure(error))
                 }
             }
         }
@@ -222,7 +224,9 @@ extension HomeViewController {
     @objc private func handleRefreshControl() {
         if isSearching {
             if let searchText = searchBar.text, !searchText.isEmpty {
-                searchPosts(query: searchText)
+                searchPosts(query: searchText) { _ in
+                    // No specific action needed after the search
+                }
                 activityIndicator.isHidden = true
             } else {
                 isSearching = false
@@ -325,10 +329,12 @@ extension HomeViewController {
         loadMorePostsIfNeeded(currentIndexPath: indexPath)
     }
     
-    private func loadMorePostsIfNeeded(currentIndexPath indexPath: IndexPath) {
+    internal func loadMorePostsIfNeeded(currentIndexPath indexPath: IndexPath) {
         if isSearching {
             if indexPath.item == searchResults.count - 1 {
-                searchPosts(query: searchBar.text ?? "", after: after)
+                searchPosts(query: searchBar.text ?? "", after: after) { _ in
+                    // No specific action needed after the search
+                }
             }
         } else {
             if indexPath.item == posts.count - 1 {
@@ -346,7 +352,9 @@ extension HomeViewController {
             searchResults.removeAll()
             collectionView.reloadData()
         } else {
-            searchPosts(query: searchText)
+            searchPosts(query: searchText) { _ in
+                // No specific action needed after the search
+            }
         }
     }
 
@@ -360,12 +368,15 @@ extension HomeViewController {
         isSearching = false
         searchBar.text = ""
         searchBar.resignFirstResponder()
+        searchResults.removeAll()
         collectionView.reloadData()
     }
     
     func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
         isSearching = true
-        searchPosts(query: searchBar.text ?? "")
+        searchPosts(query: searchBar.text ?? "") { _ in
+            // No specific action needed after the search
+        }
     }
     
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
